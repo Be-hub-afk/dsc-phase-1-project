@@ -1,65 +1,64 @@
-# Phase 1 Project
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+# Microsoft Movie Studio Analysis 
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
+Microsoft has decided to venture into the film industry.Having created a new movie studio and with no information into this particular brand of business,there's need for actionable insight.This is necessary to give Microsoft a guideline into what movies to make and what markets to explore.
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
 
-## Project Overview
+## Authors
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+- [Ben Ochoro](https://github.com/Be-hub-afk)
 
-### Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+## Business Problem
+Microsoft need guidance in creation of original video content and navigating the film industry having invested into a new movie studio.Due to the company's lack of prior knowledge in film production,this project explores the various types of film genres currently doing well in the box office inorder to give insight to head of Microsoft's new movie studio on what movies they should create.
+## Data
+The datasets below were used for this analysis and were acquired from IMDB :
 
-### The Data
+*bom.movie_gross
 
-In the folder `zippedData` are movie datasets from:
+*imdb.title.ratings
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+*imdb.title.basics
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Questions to answer
+1. Which genres of movies had the highest average ratings?
+2. Which genres generated the highest gross incomes in both domestic and foreign markets?
+3. The total count of movies released per genre?
+4. Gross income by the year?
+5. Correlation between the average rating and gross income?
+## Methods
+This project employed exploratory data analysis. The steps taken to achieve useful insights include importing the required libraries and loading the datasets, data understanding, data cleaning and data visualization.
+## Findings
+Drama ,comedy and action genres had the most movies released while the genres with the least movies were News ,musical and western genres.
 
-## Deliverables
 
-There are three deliverables for this project:
+The average rating and the total gross income do not have a clearly defined correlation or effect on one another . We can however see that movies with the low average ratings had an equally low total gross income as compared to those with average and above average average ratings.
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+The genres that generated the highest gross income are Sci-Fi,Adventure and Animation genres.War,Documentary and Romance genres had the least total gross income generated.
 
-### Key Points
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+The genres with the highest average ratings are Documentary and Biography while least average rated genres are horror and thriller. The distribution of the average ratings per genre as is really close.
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+2018 experienced a peak in gross income in both domestic and foreign markets ,which resulted to a relative peak in the total gross income.
 
-## Getting Started
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+After 2018,there was a sharp drop in gross income levels in both domestic and foreign markets .
+## Conclusion
+1. The highest gross income is generated by Sci-Fi,Adventure and Animation genres.These are common and wildly popular.
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+2. War,Documentary and Romance genres had the least total gross income generated gross income.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+3. Most number of movies were produced in the Drama ,comedy and action categories .However we can argue that these are popular movie genres.The least released movie genres are News,Musical and western genres.
 
-## Project Submission and Review
+4. The average rating and the total gross income do not have a clearly defined correlation or effect on one another . We can however see that movies with the low average ratings had an equally low total gross income as compared to those with average and above average average ratings.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+5. The start_year 2018 experienced a peak in gross income in both domestic and foreign markets ,which resulted to a relative peak in the total gross income.
 
+6. After 2018,there was a sharp drop in gross income levels in both domestic and foreign markets,resulting to a relative drop in total gross in both markets.
 ## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+The analysis focuses on what type of movies are currently doing well and use the information to make a recommendation to Microsoft as to what type of movies to make in the new production studio.The parameters used for this analysis such as gross income are affected by other multiple parameters such as marketing ,advertisement,budget which can give further insight into what into predicting what direction to take.
+## For More Information
+See the full analysis in the Jupyter Notebook or review this presentation. For additional information, contact author.             
